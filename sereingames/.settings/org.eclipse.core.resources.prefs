@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/page/home/home.jsp=UTF-8
+encoding//WebContent/WEB-INF/page/home/includeJsp/homeInclude1.jsp=UTF-8
+encoding//src/com/sereingames/controller/CustomerController.java=UTF-8
+encoding//src/com/sereingames/controller/HomeController.java=UTF-8
+encoding//src/com/sereingames/controller/ProductController.java=UTF-8
+encoding//src/com/sereingames/model/CustomerWebDto.java=UTF-8
+encoding//src/com/sereingames/model/HomeWebDto.java=UTF-8
+encoding//src/com/sereingames/model/ProductWebDto.java=UTF-8

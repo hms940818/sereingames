@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace是UserMapper接口的路径-->
+<mapper namespace="com.mybatis.dao.mapper.UserDao">
+	<resultMap type="com.mybatis.dao.model.User" id="userResult">
+                <!--通过resultMap建立pojo类属性与数据库字段一一对应的关系-->
+                <!--主键必须要有-->
+		<id property="id" column="id"/>
+		<result property="username" column="username"/>
+		<result property="password" column="password"/>
+		<result property="gender" column="gender"/>
+		<result property="birthday" column="birthday"/>
+	</resultMap>
+        <!--id与接口中的方法名要一致-->
+	<select id="findUserById" parameterType="String" resultType="com.mybatis.dao.model.User">
+                <!--#{}表示一个占位符，其中的id表示接受输入参数的名称-->
+		SELECT * FROM TUSER where "id"= #{id}
+	</select>
+	
+	<insert id="insertUser" parameterType="com.mybatis.dao.model.User">
+		INSERT
+		INTO tuser (
+		"id",
+		"username",
+		"password",
+		"gender",
+		"birthday"
+		)
+		VALUES (
+		#{id}, 
+		#{username}, 
+		#{password}, 
+		#{gender}, 
+		#{birthday}
+		)
+	</insert>
+	
+	<delete id="deleteUserById" parameterType="com.mybatis.dao.model.User">
+		DELETE tuser where "id" = #{id}
+	</delete>
+</mapper>

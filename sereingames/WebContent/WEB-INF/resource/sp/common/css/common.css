@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body{
+	width:100%;
+	margin:0;
+}
+.header{
+	height: 100px;
+    background: #f2f5f8;
+}
+。header-div1{
+	float: right;
+}
+.footer{
+    background-color: beige;;
+    width: 100%;
+    bottom: 0;
+}
+.footer-div2{
+	margin: 2% 0 0 15%;
+}
+.homelogo{
+    margin-left: calc((100% - 210px) / 2);
+    width: 200px;
+    height: 100px;
+}
+.homelogo img{
+    width: 100%;
+    margin:0 0 0 10%;
+}
+.footerlogo{
+    margin-left: calc((100% - 210px) / 2);
+}
+.footerlogo img{
+    margin: 10px 0 0 0;
+}
+.header-ul{
+	list-style-type: none;
+    line-height: normal;
+}
+
+.header-li{
+	padding-top:25px;
+    float: left;
+    margin-left: 10px;
+    width:calc(100% -166px)/5;
+    text-align: center;
+    max-width:35px;
+    height:75px;
+    max-height:100px;
+}
+
+.regist-button{
+	float:right;
+}
+
+.login-button{
+	float:right;
+	margin-right:10px;
+}
+
+ul li a {
+	text-decoration:none;
+	color: black;
+	height:100%;
+}
+
+.current-page{
+	background-color:red;
+	color:white !important;
+}
